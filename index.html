@@ -1,49 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNLOCK</title>
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header>
-  <div class="navbar"> 
-    <div class="oplata">Оплата</div>
-    <div class="procors">Про Курс</div>
-    <div class="packet">Пакети</div>
-    <div class="promene">Про Мене</div>
-    <div class="modul">Модулі </div>
-    
-   </div>
- </header>
+<header> 
+  <div class="container"> 
+    <nav class="navbar"> 
+      <button class="menu-toggle" id="menuToggle">☰</button> 
+      <div class="nav-menu" id="navMenu"> 
+        <div class="oplata">Оплата</div> 
+        <a class="procors" href="#selection2">Про Курс</a> 
+        <a class="chastput" href="#selection3">Питання</a> 
+        <a class="packet" href="#selection4">Пакети</a> 
+        <a href="#" class="promene" id="openModal">Про Мене</a> 
+        <a href="#" class="moduli" id="openModal2">Модулі</a> 
+      </div> 
+    </nav> 
+    <div class="menu-overlay"></div>
+  </div> 
+</header> 
 
- <div class="div1"> 
 
-  <div class="cletochki">
-    <div class="slova">
-      <div class="250">+250</div>
+<div class="modal" id="modal"> 
+  <div class="modal-content"> 
+    <div class="content-text"> 
+      <h1>Про Мене</h1> 
+      <p>Мене звати Лариса</p> 
+      <p>І Я:</p> 
+      <ul> 
+        <li>Сертифікований викладач CELTA</li> 
+        <li>Маю 10 років досвіду</li> 
+      </ul> 
+    </div> 
+    <div class="content-img"> 
+      <img src="img/IMG_6283.JPG" alt="photo"> 
+    </div> 
+  </div> 
+</div> 
+<div class="modal" id="modal2"> 
+  <div class="modals-cours">
+    <h1>Модулі курсу</h1> 
+    <div class="ModalPhrasal-verbs"> 
+      <div class="L"> 
+        <div class="block"> 
+          <div class="icon">
+            <i class="fa-solid fa-crosshairs"></i>
+          </div> 
+          <div class="texting"> 
+            <p class="zagolovok">Знайомство з Phrasal verbs</p> 
+            <ol> 
+              <li>What are phrasal verb?</li> 
+            </ol> 
+          </div> 
+        </div> 
+        <div class="block"> 
+          <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+           <div class="texting"> 
+            <p class="zagolovok">Socializing</p> 
+            <ol> 
+              <li>inviting and turning sb down like</li> 
+              <li>“Заскочити”</li> <li>Revision</li> 
+            </ol> </div> </div> <div class="block"> 
+              <div class="icon"><i class="fa-solid fa-bus"></i></div> 
+              <div class="texting"> 
+                <p class="zagolovok">Transport</p> 
+                <ol> 
+                  <li>Give me a lift and decrease me there</li> 
+                  <li>It drives me crazy</li> <li>Revision</li> 
+                </ol> 
+              </div> 
+            </div> 
+            <div class="block"> 
+              <div class="icon"><i class="fa-solid fa-plane-departure"></i></div>
+               <div class="texting"> 
+                <p class="zagolovok">Travelling</p> 
+                <ol> 
+                  <li>Sick and tired</li> 
+                  <li>Hit the road</li> 
+                  <li>Get away</li> 
+                  <li>Dictionary. Review.</li> 
+                </ol> 
+              </div> 
+            </div> 
+          </div> 
+          <div class="R"> 
+            <div class="block"> 
+              <div class="icon"><i class="fa-solid fa-people-carry-box"></i></div> 
+              <div class="texting"> 
+                <p class="zagolovok">Relationships</p> 
+                <ol> 
+                  <li>Big day</li> 
+                  <li>American perspective</li> 
+                  <li>Hit it off</li> 
+                  <li>Revision</li> 
+                </ol> 
+              </div> 
+            </div> 
+            <div class="block"> 
+              <div class="icon"><i class="fa-solid fa-calendar"></i></div> 
+              <div class="texting"> 
+                <p class="zagolovok">Daily life</p> 
+                <ol> 
+                  <li>Daily life</li> 
+                </ol> 
+              </div> 
+            </div> 
+            <div class="block"> 
+              <div class="icon"><i class="fa-solid fa-briefcase"></i></div> 
+              <div class="texting"> 
+                <p class="zagolovok">Business</p> 
+                <ol> 
+                  <li>Set up a meeting like a pro</li> 
+                  <li>Let’s go over/through it</li> 
+                  <li>Do you have a problem?</li> 
+                  <li>Let’s call it a day</li> 
+                  <li>Revision</li> 
+                </ol> 
+              </div> 
+            </div> 
+            <div class="block"> 
+              <div class="icon"><i class="fa-solid fa-pen"></i></div> 
+              <div class="texting"> 
+                <p class="zagolovok">Short test</p> 
+                <p class="testi">Тести за модулями та Progress Check</p> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
     </div>
 
+ <section class="hero">
+ <div class="div1"> 
+  
+ <div class="left">
+   <div class="title">
+    <h1 class="UNLOCK"> UNLOCK </h1>
+    <h2 class="Phrasal">Phrasal verbs</h2>
+  </div>
 
+    
+ <div class="card">
+    <div class="slova">
+      <div class="num"><p>250+</p></div>
+      <p class="tekstnum"> Фразових <br> слів </p>
+    </div>
+  
+    <div class="moduliv"> 
+      <div class="num">8</div>
+       <p>Модулів</p>
+    </div>
+   
+    <div class="urokiv"> 
+      <div class="num">20</div>
+       <p>Уроків</p>
+    </div>
+ </div>
+ <button>ОПЛАТИТИ КУРС</button>
+</div>
+<div class="right">
+<div class="photo-box">
+    <img src="img/photo_2026-08-03_16-48-29.JPG" alt="photo" class="photo">
+</div>
+
+ <div class="dopomoga">
+   <h3>Unlock Phrasal Verbs допоможе тобі:</h3>
+   <p>✔️ використовувати phrasal verbs у мовленні без зазубрювання;<br>
+✔️ перестати говорити «як підручник»;<br>
+✔️ почуватися впевнено в розмовах, подорожах і на роботі.<br>
+✔️ розуміти носіїв, фільми, подкасти без постійного перекладу; </p>
+ </div>
+</div>
+</div> 
+<p class="gov">Почни говорити живою англійською, 
+а не мовою підручників</p>
+ </section>
+
+
+<section class="herro" >
+ <div class="div2" id="selection2">
+
+ 
+<div class="direction">
+
+  <div class="text">
+   <h1>Про Курс</h1>
+   <p class="AB">A2 - B2</p>
+   <p class="cur"> Курс Unlock Phrasal Verbs допоможе тобі природно використовувати фразові дієслова та звучати впевнено в реальних розмовах.</p>
+
+   
+ </div>
+
+
+ <div class="rit">
+
+   <div class="gorizont1">
+
+      <div class="kv">
+        <p>Не просто вивчай phrasal verbs — проживи їх у захопливих історіях і запам’ятай через контекст.</p>
+      </div>
+ 
+      <div class="kv">
+        <p>Вчи phrasal verbs у реальному контексті: через діалоги, ситуації та фрази, які ти зможеш використовувати щодня.</p>
+      </div>
+   </div>
+  
+   <div class="gorizont2">
+
+      <div class="kv">
+       <p>Зрозуміла структура уроків + регулярне повторення, щоб phrasal verbs не просто запам’яталися, а стали твоїм інструментом для впевненого спілкування.</p>
+      </div>
+
+      <div class="kv">
+       <p><span class="spani">Практичні вправи на зручній інтерактивній платформі</span> аудіювання та розмовні завдання, щоб не просто вивчити phrasal verbs, а почати ними користуватися.</p>
+      </div>
+   </div>
+ </div>
+ </div>
+    
+<div class="vidguk"><p>Відгуки</p></div>
+<div class="swiper-container">
+<div class="swiper">
+
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="img/photo_2026-08-04_15-45-41.jpg" alt="photo">
+    </div>
+    <div class="swiper-slide">
+      <img src="img/photo_2026-08-04_15-45-45.jpg" alt="photo">
+    </div>
+    <div class="swiper-slide">
+      <img src="img/photo_2026-08-04_15-45-48.jpg" alt="photo">
+    </div>
+    <div class="swiper-slide">
+      <img src="img/photo_2026-08-04_15-45-51.jpg" alt="photo">
+    </div>
+    <div class="swiper-slide">
+      <img src="img/photo_2026-08-04_15-45-54.jpg" alt="photo">
+    </div>
+    <div class="swiper-slide">
+      <img src="img/photo_2026-08-04_15-45-57.jpg" alt="photo">
+    </div>
+    <div class="swiper-slide">
+      <img src="img/photo_2026-08-04_15-45-59.jpg" alt="photo">
+    </div>
+    <div class="swiper-slide">
+      <img src="img/photo_2026-08-04_15-46-02.jpg" alt="photo">
+    </div>
+   
+  </div>
+
+  <div class="swiper-pagination"></div>
+
+ 
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+  
+</div>
+
+<div class="image-overlay">
+    <img src="" id="bigImage">
+</div>
+
+
+ </div> 
+</section>
+
+<section class="banner">
+ <div class="overlay" id="selection3">
+ 
+  <p class="chasti">Часті питання</p>
+
+   <div class="pitanna">
+    
+    
+       <div class="leftt">
+          
+
+          <p class="vopros">❓ Скільки триває курс?</p>
+           <p class="otvet">Ти сам(-а) обираєш темп навчання. Хтось проходить курс за кілька тижнів, а хтось навчається поступово, поєднуючи його з роботою чи навчанням. </p>
+          <p class="vopros"> ❓ Чи буде доступ назавжди?</p>
+           <p class="otvet">Доступ до курсу 1 рік . Усі матеріали курсу можна завантажити, щоб мати їх під рукою навіть без доступу до платформи.</p>
+          <p class="vopros">❓ Який рівень потрібен?</p>
+           <p class="otvet">Курс створений для студентів рівня A2–B2. Якщо ти вже знаєш базову граматику, але хочеш звучати природніше та впевненіше, цей курс для тебе.</p>
+          </div>
+
+      <div class="rightt">
+        <p class="vopros">❓ Чи можна навчатися з телефон?📱 </p>
+         <p  class="otvet">Так!  Ви можете проходити навчання зі смартфона у будь-який зручний час. Усі уроки, відео та навчальні матеріали доступні з мобільного пристрою, тож ви зможете навчатися вдома, у дорозі чи під час перерви.</p>
+        <p class="vopros">❓Чим цей курс відрізняється від звичайного списку phrasal verbs?</p>
+         <p  class="otvet">Менше зубріння — більше живої англійської.</p> 
+         <p  class="otvet">Кожне фразове дієслово подається в контексті, із прикладами, поширеними помилками, асоціаціями та практичними вправами, щоб ти почав(-ла) використовувати його в мовленні.</p> 
+
+      </div>
+   </div>
+
+   <div class="otdelno">
+    <p>Кожен урок навчає не лише phrasal verbs, а й природних виразів, щоб ти почав(-ла) говорити впевненіше. </p>
+     <p>Більшість курсів навчають окремих слів. На курсі UNLOCK ви вивчаєте готові фрази та вирази в контексті, щоб швидше почати говорити англійською впевнено</p>
+  </div>
+
+
+ </div>
+</section>
+
+
+<section class="dominoshka">
+  <div class="div3" id="selection4">
+    
+<div class="paketiki">
+  <h1>Пакети</h1>
+ 
+  <div class="hothell">
+
+  <div class="relative"> 
+   <div class="number">
+        <p>2000</p>
+      </div>
+ 
+    <div class="cart">
+     
+    <p class="nazvanie">Hot</p>
+
+    <ul class="spisok">
+      <li><i class="fa-solid fa-check"></i>Інтерактивна платформа</li>
+      <li><i class="fa-solid fa-check"></i>Презентації pdf</li>
+      <li><i class="fa-solid fa-check"></i>Відео-приклади</li>
+      <li><i class="fa-solid fa-check"></i>Відео-пояснення</li>
+  
+    </ul>
+    </div>
+</div>
+
+
+  <div class="relative">
+  <div class="number">
+        <p>4000</p>
+      </div>
+
+      <div class="cart">
+      
+    <p class="nazvanie">Hell</p>
+
+    <ul class="spisok">
+      <li><i class="fa-solid fa-check"></i>Інтерактивна платформа</li>
+      <li><i class="fa-solid fa-check"></i>Презентації pdf</li>
+      <li><i class="fa-solid fa-check"></i>Відео-приклади</li>
+      <li><i class="fa-solid fa-check"></i>Відео-пояснення</li>
+      <li><i class="fa-solid fa-check"></i>Відгук та аналіз помилок</li>
+      <li><i class="fa-solid fa-check"></i>Розмовні завдання з перевіркою</li>
+      <li><i class="fa-solid fa-check"></i>1 зум консультація</li>
+    </ul>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+  <div class="pidhod">
+   <p>Підходить для:</p>
+   <ul>
+     <li>Хочете<span> вільніше говорити та краще розуміти англійську</span> в реальному житті;</li>
+     <li>✈️ Живете або плануєте жити в англомовній країні й хочете впевнено спілкуватися в повсякденних ситуаціях. </li>
+     <li>🌍 Любите подорожувати й хочете перестати перекладати кожне речення в голові, а почати говорити легко й природно.</li>
+     <li>Хочете розуміти й використовувати фразові дієслова без зубріння;</li>
+   </ul>
 
   </div>
 
 
-
-
-</div>
- 
- <div class="div2">
- </div>
-
- <div class="div3">
- </div>
-
+  </div>
+</section>
 
   <footer>
+    <p class="kinej">Phrasal verbs — це не слова, які треба просто завчити. Це фрази, які допомагають вам звучати природно та впевнено в англійській.</p>
+    <p class="social">Cоц. мережі</p>
+<a href="https://www.instagram.com/english_with_larka?igsh=MWYyb3pnY2UweHJxdQ%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
 
   </footer>
+
+</div> 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
 <script src="script.js"></script>
 </body>
+
 </html>

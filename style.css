@@ -249,7 +249,7 @@ padding-left: 30px;
     max-width: calc(100vw - 40px);
     max-height: calc(100vh - 40px);
 
-    padding: 40px 70px;
+    padding: 50px 80px;
     border-radius: 20px;
 
     position: relative;
@@ -264,7 +264,6 @@ padding-left: 30px;
     width: 100%;
     max-width: 400px;
     height: auto;
-
     border-radius: 15px;
     box-shadow: 20px 20px 0 #ffd2c2;
 }
@@ -289,7 +288,11 @@ padding-left: 30px;
 .content-text ul {
     margin-left: 40px;
 }
-
+    .nyalo{
+        display: flex;
+        justify-content: space-between;
+         padding: 30px;
+    }
 .menu-toggle {
     display: none;
 }
@@ -390,11 +393,9 @@ padding-left: 30px;
     }
 }
 @media (max-width: 900px) {
-
     .modal {
         padding: 10px;
     }
-
     .modal-content {
         width: 100%;
         max-width: 500px;
@@ -406,74 +407,96 @@ padding-left: 30px;
         display: block;
         overflow-y: auto;
     }
-
     .content-text h1 {
         font-size: 42px;
         padding-bottom: 15px;
         margin: 0;
         display: inline-block;
     }
-
-    .content-img {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 10px;
-    }
-
     .modal-content img {
-        width: 100px;
-        height: 125px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
         object-fit: cover;
 
         border-radius: 10px;
         box-shadow: 8px 8px 0 #ffd2c2;
     }
-
+    .content-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
     .content-text p {
         font-size: 21px;
         margin: 10px 0;
     }
-
     .content-text li {
         font-size: 19px;
         padding: 5px 0;
     }
-
     .content-text ul {
         margin-left: 15px;
         padding-left: 20px;
     }
+    .nyalo{
+    gap: 20px;    
+    }
 }
 @media (max-width: 500px) and (orientation: portrait) {
-
     .modal {
         padding: 8px;
     }
-
     .modal-content {
         max-height: calc(100vh - 16px);
         padding: 15px;
     }
-
     .content-text h1 {
         font-size: 34px;
     }
-
     .modal-content img {
-        width: 80px;
-        height: 100px;
+        width: auto;
+        height: 600px;
         box-shadow: 6px 6px 0 #ffd2c2;
+         padding: 30px;
     }
+.nyalo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+.content-text {
+    flex: 1;
+    min-width: 0;
+}
+.content-img {
+    flex: 0 1 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content img {
+    display: block;
 
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+
+    border-radius: 15px;
+    box-shadow: 20px 20px 0 #ffd2c2;
+
+    object-fit: cover;
+}
     .content-text p {
         font-size: 18px;
     }
-
     .content-text li {
         font-size: 17px;
         padding: 4px 0;
     }
-
     .content-text ul {
         margin-left: 5px;
         padding-left: 18px;
@@ -539,6 +562,68 @@ padding-left: 30px;
 }
 
 
+.modal-content,
+.modals-cours {
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    background: transparent;
+    box-shadow: none;
+
+    color: #ffd2c2;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 45px;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    transition: 
+        color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+.modal-close:hover {
+    color: #ffffff;
+    transform: rotate(90deg);
+    box-shadow: none;
+}
+.modals-cours {
+    position: relative;
+}
+
+.modal-content {
+    position: relative;
+}
+@media (max-width: 900px) {
+    .modal-close {
+        top: 8px;
+        right: 10px;
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 32px;
+    }
+}
+
+
+
+
 
 .div1 {
     width: 100%;
@@ -595,6 +680,7 @@ border-radius: 8px;
 
 }
 .card {
+    font-family: "Montserrat" ;  
     width: 100%;
     display: flex;
     justify-content: center;
@@ -671,7 +757,10 @@ font-size: 25px;
 }
 .dopomoga i{
 color: green; 
-padding-right: 10px;
+
+}
+.dopomoga h3{
+padding-bottom: 30px;    
 }
 button{
   background-color: #8096fc;  

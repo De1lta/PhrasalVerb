@@ -2,14 +2,18 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  centeredSlides: true,
 
-slidesPerView: 3.6,
-centeredSlides: true,
-spaceBetween: 120,
-centerInsufficientSlides: true,
+breakpoints: {
+    0: {
+        slidesPerView: 1,
+    },
+    601: {
+        slidesPerView: 3,
+    }
+},
 
-loopedSlides: 8,
-  
+
   autoplay: {
     delay:5000,
   },
@@ -42,36 +46,42 @@ overlay.addEventListener("click", () => {
 });
 
 
-
 const modal = document.getElementById("modal");
 const openBtn = document.getElementById("openModal");
 
-openBtn.addEventListener("click",
-  function (e) {
+openBtn.addEventListener("click", function(e) {
     e.preventDefault();
+
+    document.getElementById("navMenu").classList.remove("active");
+    document.querySelector(".menu-overlay").classList.remove("active");
+
     modal.style.display = "flex";
-  });
-  modal.addEventListener("click",
-    function (e) {
-      if(e.target === modal) {
-        modal.style.display = "none";
-      }
-    });
-
-    const modal2 = document.getElementById("modal2");
-const openBtn2 = document.getElementById("openModal2");
-
-openBtn2.addEventListener("click", function(e){
-    e.preventDefault();
-    modal2.style.display = "flex";
 });
 
-modal2.addEventListener("click", function(e){
-    if(e.target === modal2){
-        modal2.style.display = "none";
+modal.addEventListener("click", function(e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
     }
 });
 
+
+const modal2 = document.getElementById("modal2");
+const openBtn2 = document.getElementById("openModal2");
+
+openBtn2.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    document.getElementById("navMenu").classList.remove("active");
+    document.querySelector(".menu-overlay").classList.remove("active");
+
+    modal2.style.display = "flex";
+});
+
+modal2.addEventListener("click", function(e) {
+    if (e.target === modal2) {
+        modal2.style.display = "none";
+    }
+});
 
 const cardsBlock = document.querySelector(".rit");
 

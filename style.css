@@ -311,9 +311,13 @@ padding-left: 30px;
     background: none;
 }
 @media (max-width: 900px) {
+header {
+    border-radius: 0 0 6px 6px;
+}
+
     .navbar {
         justify-content: flex-end;
-        padding: 15px 30px;
+        padding: 10px 30px;
     }
     .menu-toggle {
         display: block;
@@ -335,7 +339,7 @@ padding-left: 30px;
     right: 0;
     left: auto;
 
-    width: 280px;
+    width: 250px;
     max-width: 85vw;
     height: 100vh;
 
@@ -394,7 +398,7 @@ padding-left: 30px;
 }
 @media (max-width: 900px) {
     .modal {
-        padding: 10px;
+        padding: 25px;
     }
     .modal-content {
         width: 100%;
@@ -446,7 +450,7 @@ padding-left: 30px;
 }
 @media (max-width: 500px) and (orientation: portrait) {
     .modal {
-        padding: 8px;
+        padding: 25px;
     }
     .modal-content {
         max-height: calc(100vh - 16px);
@@ -455,17 +459,12 @@ padding-left: 30px;
     .content-text h1 {
         font-size: 34px;
     }
-    .modal-content img {
-        width: auto;
-        height: 600px;
-        box-shadow: 6px 6px 0 #ffd2c2;
-         padding: 30px;
-    }
+
 .nyalo {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 60px;
+    align-items: flex-start;
+    gap: 15px;
     width: 100%;
 }
 .content-text {
@@ -473,23 +472,20 @@ padding-left: 30px;
     min-width: 0;
 }
 .content-img {
-    flex: 0 1 450px;
+    flex: 0 1 42%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .modal-content img {
-    display: block;
-
     width: 100%;
-    max-width: 450px;
+    max-width: 160px;
     height: auto;
-
+    padding: 0;
     border-radius: 15px;
-    box-shadow: 20px 20px 0 #ffd2c2;
-
+    box-shadow: 8px 8px 0 #ffd2c2;
     object-fit: cover;
-}
+
     .content-text p {
         font-size: 18px;
     }
@@ -501,6 +497,10 @@ padding-left: 30px;
         margin-left: 5px;
         padding-left: 18px;
     }
+    .modals-cours {
+    padding: 35px 25px;
+}
+}
 }
 @media (max-width: 900px) and (orientation: landscape) {
 
@@ -760,7 +760,7 @@ color: green;
 
 }
 .dopomoga h3{
-padding-bottom: 30px;    
+padding-bottom: 10px;    
 }
 button{
   background-color: #8096fc;  
@@ -819,7 +819,7 @@ button:active{
 }
 .gov{
     font-family: "Montserrat";
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
 
     margin: 30px 30px 20px;
@@ -1320,7 +1320,7 @@ z-index: 500;
     top: -15px;
 
     background-color: #ff3131;
-    border-radius: 18px;
+    border-radius: 13px;
 
     font-size: 40px;
     font-family: "Montserrat";
@@ -1411,35 +1411,29 @@ padding-top: 20px;
         align-items: center;
         gap: 40px;
     }
-
     .paketiki {
         width: 100%;
         max-width: 850px;
     }
-
     .paketiki h1 {
         font-size: clamp(55px, 7vw, 80px);
         padding-bottom: 30px;
     }
-
     .hothell {
         width: 100%;
         justify-content: center;
         gap: clamp(20px, 4vw, 50px);
     }
-
     .cart {
         width: clamp(280px, 35vw, 350px);
         min-height: 500px;
     }
-
     .pidhod {
         width: 100%;
         max-width: 850px;
         padding-top: 0;
         text-align: left;
     }
-
     .pidhod p {
         padding-bottom: 20px;
     }
@@ -1453,38 +1447,31 @@ padding-top: 20px;
         align-items: center;
         gap: 35px;
     }
-
     .paketiki {
         width: 100%;
     }
-
     .paketiki h1 {
         font-size: clamp(45px, 13vw, 65px);
         padding-bottom: 25px;
     }
-
     .hothell {
         width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-
     .cart {
         width: min(85vw, 320px);
         min-height: 0;
         padding: 0 18px 25px;
     }
-
     .nazvanie {
         font-size: clamp(45px, 13vw, 60px);
         margin-bottom: 15px;
     }
-
     .spisok {
         font-size: clamp(16px, 4.5vw, 20px);
     }
-
     .spisok li {
         margin-bottom: 18px;
         gap: 10px;
@@ -1498,7 +1485,6 @@ padding-top: 20px;
         font-size: 30px;
         border-radius: 14px;
     }
-
     .pidhod {
         width: 100%;
         max-width: none;
@@ -1506,15 +1492,20 @@ padding-top: 20px;
         text-align: left;
         font-size: clamp(16px, 4vw, 20px);
     }
-
     .pidhod p {
         font-size: clamp(28px, 8vw, 40px);
         padding-bottom: 15px;
     }
-
     .pidhod li {
         padding-top: 12px;
     }
+}
+@media (max-width: 900px) {
+.number{
+    font-size: 35px;
+    min-height: 50px;
+    min-width: 120px;
+}    
 }
 
 
@@ -1571,7 +1562,7 @@ text-decoration: none;
     margin: auto auto 20px;
     padding: 0 30px;
     text-align: center;
-    font-size: clamp(22px, 2.2vw, 35px);
+    font-size: clamp(20px, 2.2vw, 25px);
     transform: none;
 }
     .dopomoga {
@@ -1675,7 +1666,7 @@ text-decoration: none;
     box-sizing: border-box;
     padding: 0;
     margin: 20px 0 0;
-    font-size: clamp(22px, 3vw, 35px);
+    font-size: clamp(22px, 3vw, 26px);
     text-align: center;
 }
 }
@@ -1689,6 +1680,9 @@ text-decoration: none;
     .card {
         gap: 15px;
         flex-wrap: nowrap;
+    }
+    .title{
+        padding-top: 20px;
     }
 }
 

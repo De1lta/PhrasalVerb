@@ -166,7 +166,7 @@ padding-left: 30px;
         max-width: 500px; 
         max-height: calc(100vh - 140px);
 
-        padding: 20px; 
+        
         border-radius: 16px; 
         gap: 20px; 
         overflow-y: auto; 
@@ -397,7 +397,7 @@ header {
 }
 @media (max-width: 900px) {
     .modal {
-padding: 90px;
+padding: 20px;
 
     }
     .modal-content {
@@ -406,7 +406,7 @@ padding: 90px;
         max-height: calc(100vh - 20px);
 
         padding: 20px;
-        border-radius: 16px;
+        border-radius: 13px;
 
         display: block;
         overflow-y: auto;
@@ -450,7 +450,7 @@ padding: 90px;
 }
 @media (max-width: 500px) and (orientation: portrait) {
 .modal {
-    padding:60px;
+    padding:40px;
     align-items: center;
     justify-content: center;
 }
@@ -496,7 +496,7 @@ padding: 90px;
     padding: 0;
     margin: 0;
 
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 8px 8px 0 #ffd2c2;
 
     object-fit: cover;

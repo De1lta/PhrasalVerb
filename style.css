@@ -422,11 +422,13 @@ padding: 20px;
         max-width: 400px;
         height: auto;
         object-fit: cover;
+    
 
         border-radius: 10px;
         box-shadow: 8px 8px 0 #ffd2c2;
     }
     .content-img {
+    
         width: 100%;
         display: flex;
         justify-content: center;
@@ -641,7 +643,7 @@ padding: 20px;
     width: 100%;
     max-width: 1800px;
     margin: 0 auto;
-    padding: 0 clamp(30px, 5vw, 100px);
+    padding: 0 clamp(30px, 5vw, 100px) 80px;
     box-sizing: border-box;
 
     display: grid;
@@ -651,6 +653,7 @@ padding: 20px;
 }
 .hero{
 background-color: #f3f2f2;   
+height: auto;
 min-height: 100vh;
 position: relative;
 } 
@@ -774,7 +777,7 @@ color: green;
 .dopomoga h3{
 padding-bottom: 10px;    
 }
-button{
+.opatiti{
   background-color: #8096fc;  
   border: none;
   border-radius: 12px;
@@ -796,16 +799,16 @@ button{
     height: clamp(110px, 10vw, 160px);
     font-size: clamp(35px, 3vw, 55px);
 
-margin-top: 90px;
+margin-top: 40px;
 margin-left: 5px;
  
 }
-button:hover {
+.opatiti:hover {
     transform: translateY(-4px);
     box-shadow: 10px 14px 0px #68729f;
     
 }
-button:active{
+.opatiti:active{
  transform: translateY(4px);
   box-shadow: 4px 4px 0px #68729f;
 }
@@ -836,6 +839,107 @@ button:active{
     margin: 30px 30px 20px;
     text-align: left;
 }  
+
+.platform-block {
+    width: min(650px, 100%);
+    box-sizing: border-box;
+    background-color: #ffd2c2;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 40px;
+    padding: 10px;
+}
+.platform-toggle {
+    width: 100%;
+   height: fit-content;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    color: #000;
+}
+.platform-title {
+    font-size: 36px;
+    line-height: 1;
+}
+.platform-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 1;
+
+    transition: transform 0.2s ease;
+}
+.platform-content {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.platform-block.platform-open .platform-arrow {
+    transform: rotate(180deg);
+}
+.platform-block.platform-open .platform-content {
+    display: block;
+}
+.platform-videos {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 38px;
+
+padding: 40px 40px 30px;
+}
+.platform-video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    min-height: 250px;
+    background-color: #f5f5f5;
+
+    border-radius: 12px;
+
+    box-shadow: 15px 15px 0 #8096fc;
+
+    overflow: hidden;
+}
+.platform-video-wrapper video {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+.platform-content {
+    animation: platformOpen 1s ease;
+}
+@keyframes platformOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
 
 
 
@@ -1659,7 +1763,7 @@ text-decoration: none;
 .urokiv p {
     font-size: clamp(21px, 2.7vw, 32px);
 }
-    button {
+    .opatiti {
         order: 4;
         width: min(700px, 90vw);
         height: clamp(90px, 12vw, 160px);
@@ -1680,6 +1784,60 @@ text-decoration: none;
     font-size: clamp(22px, 3vw, 26px);
     text-align: center;
 }
+
+.platform-block {
+    order: 4;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.platform-title {
+    font-size: 28px;
+}
+
+.platform-arrow {
+    font-size: 26px;
+}
+
+.platform-videos {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 20px 30px 25px;
+}
+
+.platform-video-wrapper {
+    box-shadow: 10px 10px 0 #8096fc;
+}
+
+@media (max-width: 500px) {
+
+    .platform-block {
+        border-radius: 16px;
+    }
+
+    .platform-toggle {
+        min-height: 48px;
+        padding: 5px 15px;
+    }
+
+    .platform-title {
+        font-size: 24px;
+    }
+
+    .platform-arrow {
+        font-size: 23px;
+    }
+
+    .platform-videos {
+        padding: 15px 20px 20px;
+        gap: 22px;
+    }
+
+    .platform-video-wrapper {
+        border-radius: 15px;
+        box-shadow: 6px 6px 0 #8096fc;
+    }
+}
 }
 @media (max-width: 600px) and (orientation: portrait) {
     .num {
@@ -1687,7 +1845,6 @@ text-decoration: none;
         height: 90px;
         font-size: 28px;
     }
-
     .card {
         gap: 15px;
         flex-wrap: nowrap;

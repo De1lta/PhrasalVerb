@@ -146,3 +146,16 @@ menuOverlay.addEventListener("click", () => {
     navMenu.classList.remove("active");
     menuOverlay.classList.remove("active");
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const block = document.querySelector('.platform-block');
+    const button = document.querySelector('.platform-toggle');
+
+    button.addEventListener('click', () => {
+        block.classList.toggle('platform-open');
+    });
+});

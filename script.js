@@ -83,6 +83,32 @@ modal2.addEventListener("click", function(e) {
     }
 });
 
+const modal3 = document.getElementById("modal3");
+const openBtn3 = document.getElementById("openModal3");
+
+openBtn3.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    document.getElementById("navMenu").classList.remove("active");
+    document.querySelector(".menu-overlay").classList.remove("active");
+
+    modal3.style.display = "flex";
+});
+
+modal3.addEventListener("click", function(e) {
+    if (e.target === modal3) {
+        modal3.style.display = "none";
+    }
+});
+
+
+
+
+
+
+
+
+
 const cardsBlock = document.querySelector(".rit");
 
 const observer = new IntersectionObserver((entries) => {

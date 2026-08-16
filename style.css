@@ -65,6 +65,79 @@ border-radius: 0 0 12px 12px;
     justify-content: flex-end;
     align-items: center;
 }
+
+.oplata{
+text-decoration: none;
+color: #000;    
+}
+
+.op-vmist{
+    box-sizing: border-box;
+    width: 1000px;
+
+    background-color: #004aad;
+    max-width: calc(100vw - 40px);
+    max-height: calc(100vh - 40px);
+
+    padding: 50px 80px;
+    border-radius: 20px;
+
+    position: relative;
+    overflow-y: auto;    
+}
+.op-text{
+    padding: 0;
+}
+.op-text h1{
+    font-family: none;
+    color: #ffd2c2;
+    font-size: 80px;
+    padding-bottom: 30px;    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.op-text a {
+color: #f3f2f2;
+font-family: "Montserrat" ;  
+}
+.op-btn{
+background-color: #8096fc;
+border-radius: 15px;
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+text-align: center;
+}
+.prav li::marker {
+color:#f3f2f2;
+}
+.op-btn a{
+font-size: 55px;    
+padding: 10px;
+}
+.prav a{
+font-size:25px;
+}
+.prav{
+display: flex;   
+flex-direction: column; 
+gap: 10px;    
+}
+.pravila{
+text-decoration: none;   
+}
+.povern{
+text-decoration: none;  
+}
+.contact{
+text-decoration: none;    
+}
+
+
+
+
+
 .procors{
 text-decoration: none;
 color: #000;
@@ -99,7 +172,6 @@ color: #000;
 .nav-menu .oplata {
     border-left: none;
 }
-
 .modals-cours{
     box-sizing: border-box;
     width: 1000px;
@@ -288,11 +360,11 @@ padding-left: 30px;
 .content-text ul {
     margin-left: 40px;
 }
-    .nyalo{
+.nyalo{
         display: flex;
         justify-content: space-between;
          padding: 30px;
-    }
+}
 .menu-toggle {
     display: none;
 }
@@ -552,7 +624,8 @@ padding: 20px;
 }
 
 .modal-content,
-.modals-cours {
+.modals-cours,
+.op-vmist {
     animation: modalOpen 0.35s ease;
 }
 @keyframes modalBg {
@@ -577,10 +650,10 @@ padding: 20px;
 
 
 .modal-content,
-.modals-cours {
+.modals-cours,
+.op-vmist {
     position: relative;
 }
-
 .modal-close {
     position: absolute;
     top: 20px;
@@ -610,17 +683,12 @@ padding: 20px;
         transform 0.2s ease;
 
 }
-
 .modal-close:hover {
     color: #ffffff;
     transform: rotate(90deg);
     box-shadow: none;
 }
 .modals-cours {
-    position: relative;
-}
-
-.modal-content {
     position: relative;
 }
 @media (max-width: 900px) {
@@ -1286,30 +1354,24 @@ text-align: right;
       padding-top: 20px;
 }
 @media (max-width: 1200px){
-
     .banner {
         min-height: auto;
     }
-
     .overlay {
         position: relative;
         padding: 50px clamp(20px, 5vw, 60px);
     }
-
     .chasti {
         padding: 0 0 30px;
         font-size: clamp(45px, 8vw, 70px);
         text-align: left;
         f
     }
-
     .pitanna {
-        display: flex;
+        display:flex;
         flex-direction: column;
         padding: 0;
-
     }
-
     .leftt,
     .rightt {
         width: 100%;
@@ -1854,3 +1916,94 @@ text-decoration: none;
     }
 }
 
+
+
+.navbarik{
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding: 20px 60px;
+    
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;  
+}
+.back-button{
+    color: #f3f2f2;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    text-decoration: none;   
+}
+.nazv{
+    display: flex;
+    justify-content: flex-end;
+    color: #f3f2f2;
+    font-size: 35px;
+    padding: 2px;
+    margin: 0;
+    text-align: center;
+    
+}
+.prav-ta-umov-content{
+background-color: #f3f2f2; 
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; 
+    position: relative; 
+        padding: clamp(50px, 5vw, 80px) 0 clamp(40px, 4vw, 60px); 
+        height: auto;
+min-height: 100vh;
+}
+.prav-ta-umov-oblast{
+background-color: #fec2b2;    
+box-sizing: border-box;
+margin:30px auto;
+border-radius: 15px;
+text-align: center;
+padding: 40px;
+width: 60%;
+display: flex;
+justify-content: center;
+font-size: 25px;
+}
+.prav-ta-umov-oblast h1 {
+    margin: 0;
+    font-size: clamp(25px, 5vw, 50px);
+    overflow-wrap: break-word;
+}
+.prav-ta-umov-text{
+padding: 70px;   
+font-size: 30px; 
+}
+.No{
+font-size: 35px;
+font-weight: 600;
+}
+.prav-ta-umov-text p{
+padding: 20px 0;    
+}
+.data{
+font-size: 35px; 
+padding: 0 70px;  
+display: flex; 
+align-items: flex-end;
+}
+@media (max-width: 600px) and (orientation: portrait){
+.nazv{
+font-size: 30px;  
+    justify-content: flex-end; 
+}    
+    .prav-ta-umov-oblast {
+        width: calc(100% - 30px);
+        padding: 25px 15px;
+    }
+
+    .prav-ta-umov-oblast h1 {
+        font-size: 28px;
+    }
+}

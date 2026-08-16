@@ -133,7 +133,21 @@ text-decoration: none;
 .contact{
 text-decoration: none;    
 }
-
+@media (max-width: 600px) and (orientation: portrait) {
+    .op-vmist {
+        width: calc(100vw - 20px);
+        max-width: none;
+        padding: 40px 30px;
+        border-radius: 15px;
+    }
+    .prav{
+    font-size:18px;    
+    }
+    .prav-ta-umov-text {
+    padding: 30px 20px;
+    font-size: 18px;
+}
+}
 
 
 
@@ -2012,4 +2026,6 @@ font-size: 20px;
     .No{
        font-size: 25px;     
     }
+
+
 }

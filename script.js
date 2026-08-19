@@ -84,15 +84,17 @@ modal2.addEventListener("click", function(e) {
 });
 
 const modal3 = document.getElementById("modal3");
-const openBtn3 = document.getElementById("openModal3");
+const openBtn3 = document.querySelectorAll(".openModal3");
 
-openBtn3.addEventListener("click", function(e) {
+openBtn3.forEach(button => {
+button.addEventListener("click", function(e) {
     e.preventDefault();
 
     document.getElementById("navMenu").classList.remove("active");
     document.querySelector(".menu-overlay").classList.remove("active");
 
     modal3.style.display = "flex";
+});
 });
 
 modal3.addEventListener("click", function(e) {

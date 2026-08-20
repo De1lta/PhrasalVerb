@@ -139,6 +139,17 @@ text-decoration: none;
 .contact{
 text-decoration: none;    
 }
+.tg a{
+font-size:38px;
+text-align: center;
+text-decoration: none;
+}
+.tg{
+padding-bottom: 30px;  
+display: flex; 
+ justify-content: center;
+}
+
 @media (max-width: 600px) and (orientation: portrait) {
     .op-vmist {
         width: calc(100vw - 20px);
@@ -170,7 +181,12 @@ text-align: center;
     padding-left: 20px;
     padding-right: 20px;
 }
+.tg a{
+font-size: 25px;    
 }
+}
+
+
 
 
 
